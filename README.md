@@ -1,4 +1,4 @@
-# general-browser-automation
+# AutoBrowserAgent
 
 OpenManus 是一个开源的 AI Agent 框架，能够使用多种工具（浏览器、Python 执行、文件操作、网络搜索等）自动完成复杂任务。本项目设计并开发基于OpenManus架构 的自主浏览器 Agent，支持通过浏览器与 Agent 实时交互，同时针对国内网络环境做了适配优化，旨在解决传统 RPA 无法处理的动态网页交互与复杂推理任务（如跨平台比价、竞品分析）。
 
@@ -20,7 +20,7 @@ OpenManus 是一个开源的 AI Agent 框架，能够使用多种工具（浏览
 ## 项目结构
 
 ```
-general-browser-automation/
+AutoBrowserAgent/
 ├── app.py                    # Web GUI 主入口（FastAPI + SSE）
 ├── main.py                   # CLI 命令行入口
 ├── run_flow.py               # 多 Agent 协作流程入口
@@ -125,8 +125,8 @@ general-browser-automation/
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/sc3124038545/general-browser-automation.git
-cd general-browser-automation
+git clone https://github.com/SummerCaptain/AutoBrowserAgent.git
+cd AutoBrowserAgent
 
 # 2. 创建虚拟环境并激活
 uv venv --python 3.12
@@ -150,8 +150,8 @@ conda create -n openmanus python=3.12
 conda activate openmanus
 
 # 2. 克隆仓库并安装
-git clone https://github.com/sc3124038545/general-browser-automation.git
-cd general-browser-automation
+git clone https://github.com/SummerCaptain/AutoBrowserAgent.git
+cd AutoBrowserAgent
 pip install -r requirements.txt
 
 # 3. 安装浏览器驱动
